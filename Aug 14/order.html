@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  
+  <title>Online Order</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Return to Homepage</a>
+  </nav>
+
+  <h2>Place Your Order & Get Food Delivered At Your Doorstep!</h2>
+
+  <left>
+    <table>
+      <form action="# Sai-Baba">
+
+        <tr>
+          <td valign="top">
+            Name:
+          </td>
+          <td>
+            <input type="text" id="name" name="name" required><br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td valign="top">
+            Mobile No.:
+          </td>
+
+          <td>
+            <input type="tel" id="mobile" name="mobile" required><br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td valign="top">
+            Delivery Address:
+          </td>
+          <td>
+            <textarea id="address" name="address" rows="3" required></textarea><br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td valign="top">
+            Select Food Item:
+          </td>
+
+          <td>
+            <select id="food" name="food" required>
+              <option value="">--Choose an item--</option>
+              <option value="burger">Burger</option>
+              <option value="pizza">Pizza</option>
+              <option value="sandwich">Sandwich</option>
+              <option value="pasta">Pasta</option>
+              <option value="salad">Salad</option>
+            </select><br><br>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td valign="top">
+            Quantity:
+          </td>
+          <td>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td valign="top">
+            Payment Method:
+          </td>
+
+          <td>
+            <select id="payment" name="payment" required>
+              <option value="">--Select--</option>
+              <option value="cod">Cash on Delivery</option>
+              <option value="card">Credit/Debit Card</option>
+              <option value="upi">UPI</option>
+            </select><br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" colspan="2">
+            <input type="submit" value="Place Order">
+          </td>
+        </tr>
+
+      </form>
+    </table>
+  </left>
+
+</body>
+
+</html>

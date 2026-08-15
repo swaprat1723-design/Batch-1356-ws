@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Return to Homepage</a>
+  </nav>
+
+  <h2>Book a Table</h2>
+
+  <table>
+    <form>
+      <tr>
+        <td valign="top">
+          Name:
+
+        </td>
+
+        <td>
+          <input type="text" id="name" name="name" required><br><br>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          Mobile No.:
+        </td>
+
+        <td>
+          <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          Number of Persons:
+        </td>
+
+        <td>
+
+          <input type="number" id="persons" name="persons" min="1" required><br><br>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          Date:
+
+        </td>
+
+        <td>
+          <input type="date" id="date" name="date" required><br><br>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          Time:
+
+        </td>
+
+        <td>
+          <input type="time" id="time" name="time" required><br><br>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          Food Preference:
+
+        </td>
+
+        <td>
+          <select id="food" name="food" required>
+            <option value="">--Select--</option>
+            <option value="veg">Vegetarian</option>
+            <option value="nonveg">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+          </select><br><br>
+
+        </td>
+      </tr>
+
+      <tr colspan="2" align="center">
+        <td valign="top" >
+          <input type="submit" value="Book Table">
+        </td>
+
+
+      </tr>
+
+
+
+    </form>
+  </table>
+</body>
+
+</html>
