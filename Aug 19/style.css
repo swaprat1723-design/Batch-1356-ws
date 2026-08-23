@@ -1,0 +1,60 @@
+#h101{
+
+    background-color: firebrick;
+}
+
+#h102{
+    border-radius: 50%;
+}
+
+#h103{
+
+    color:goldenrod;
+}
+
+#h104{
+    background-color: cadetblue;
+    height: 45px;
+    text-align: center;
+    padding-top: 20px;
+    color:white;
+    text-decoration: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+
+    background-color: dimgray;
+
+}
+
+h2, h3{
+    color:goldenrod
+}
+
+p{
+    color:antiquewhite
+}
+
+li{
+    color:antiquewhite
+}
+
+th{
+    color:antiquewhite;
+    
+}
+
+i{
+    color:deepskyblue
+}
+
+td{
+    color:antiquewhite;
+    
+}
