@@ -1,0 +1,30 @@
+#outer{
+
+    background-color: white;
+    height:600px;
+    width: 300px;;
+    border-style: solid;
+    border-color: black;
+    margin-left: 450px;
+    border-radius: 10px;
+}
+
+.circle{
+    border-radius: 50%;
+    height:150px;
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 35px;
+}
+
+#inner1{
+    background-color: crimson;
+}
+
+#inner2{
+    background-color: goldenrod;
+}
+
+#inner3{
+    background-color: green;
+}
