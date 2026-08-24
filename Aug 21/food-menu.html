@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Menu | Palm Paradise Resort</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="palm.css">
+    <style>
+        .menu-intro { padding: 4rem 8% 2rem; background: #fff; }
+        .menu-intro h2 { max-width: 680px; margin: .5rem 0 1rem; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.5rem); }
+        .menu-intro p { max-width: 650px; color: #557064; line-height: 1.8; }
+        .menu-controls { display: inline-flex; padding: .3rem; border: 1px solid #c9ddc7; background: #eef4e8; }
+        .menu-filter { border: 0; border-radius: 2px; padding: .65rem 1.2rem; background: transparent; color: #183d2c; font-weight: 700; }
+        .menu-filter.active { background: #2f7d4f; color: #fff; }
+        .menu-section { padding: 2.5rem 8% 0; background: #fff; }
+        .menu-section h3 { margin-bottom: 1.2rem; font-family: 'Playfair Display', serif; font-size: 1.9rem; }
+        .dish { height: 100%; padding: 1.25rem 1.35rem; border-top: 2px solid #b9d77a; background: #eef4e8; }
+        .dish h4 { display: flex; justify-content: space-between; gap: 1rem; margin: 0 0 .45rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+        .dish p { margin: 0; color: #557064; font-size: .88rem; line-height: 1.6; }
+        .diet { flex: 0 0 auto; padding: .18rem .4rem; border: 1px solid #70a96e; border-radius: 2px; color: #2f7d4f; font-family: 'DM Sans', sans-serif; font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
+        .dish[data-diet="non-veg"] .diet { border-color: #cb755b; color: #b65843; }
+        .menu-note { margin-top: 3rem; padding: 2rem 8%; background: #e5f0df; color: #355b45; }
+        @media (max-width: 575px) { .menu-filter { padding: .6rem .75rem; font-size: .85rem; } .dish h4 { font-size: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><span class="brand-mark">♒</span>Palm Paradise <small>RESORT</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ml-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="food-menu.html">Food menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ml-lg-3 mt-2 mt-lg-0"><a class="btn btn-palm" href="booking.html">Book a cottage</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="eyebrow">From our kitchen to your table</div>
+        <h1>The Palm Paradise menu.</h1>
+        <p>Comforting Maharashtrian flavours, prepared fresh for our guests with local ingredients and a generous homestyle touch.</p>
+    </header>
+
+    <main>
+        <section class="menu-intro">
+            <div class="eyebrow" style="color:#2f7d4f">Choose your plate</div>
+            <h2>Good food makes a good getaway.</h2>
+            <p>Our daily menu changes with the season and what is freshest at the market. Use the filter to browse vegetarian and non-vegetarian dishes. Please tell our host about dietary requirements when you book.</p>
+            <div class="menu-controls" role="group" aria-label="Filter dishes by dietary preference">
+                <button class="menu-filter active" type="button" data-filter="all" aria-pressed="true">All dishes</button>
+                <button class="menu-filter" type="button" data-filter="veg" aria-pressed="false">Vegetarian</button>
+                <button class="menu-filter" type="button" data-filter="non-veg" aria-pressed="false">Non-vegetarian</button>
+            </div>
+        </section>
+
+        <section class="menu-section"><h3>Breakfast <span class="eyebrow">08:00 – 10:30</span></h3><div class="row">
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Kanda poha <span class="diet">Veg</span></h4><p>Flattened rice with onion, peanuts, curry leaves, and a squeeze of lime.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Thalipeeth <span class="diet">Veg</span></h4><p>Spiced multigrain flatbread served warm with curd and homemade white butter.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Misal pav <span class="diet">Veg</span></h4><p>Sprouted lentil curry, farsan, onions, and soft pav with a lively Pune-style rassa.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Sabudana khichdi <span class="diet">Veg</span></h4><p>Soft tapioca pearls with roasted peanuts, potato, and gentle green chilli.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="non-veg"><article class="dish" data-diet="non-veg"><h4>Anda bhurji pav <span class="diet">Non-veg</span></h4><p>Masala scrambled eggs with coriander, onion, tomato, and toasted pav.</p></article></div>
+        </div></section>
+
+        <section class="menu-section"><h3>Lunch <span class="eyebrow">12:30 – 15:00</span></h3><div class="row">
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Varan bhaat <span class="diet">Veg</span></h4><p>Simple tuvar dal and steamed rice finished with ghee, lemon, and pickle.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Bharli vangi <span class="diet">Veg</span></h4><p>Baby brinjals filled with a fragrant peanut, coconut, and goda masala.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Pithla bhakri <span class="diet">Veg</span></h4><p>Silky chickpea-flour curry with rustic jowar bhakri and thecha.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="non-veg"><article class="dish" data-diet="non-veg"><h4>Chicken rassa thali <span class="diet">Non-veg</span></h4><p>Slow-cooked chicken curry with bhakri, rice, salad, and a seasonal side.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="non-veg"><article class="dish" data-diet="non-veg"><h4>Kolhapuri mutton sukka <span class="diet">Non-veg</span></h4><p>Tender mutton tossed with roasted coconut, spices, and fresh coriander.</p></article></div>
+        </div></section>
+
+        <section class="menu-section"><h3>Dinner <span class="eyebrow">19:30 – 22:00</span></h3><div class="row">
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Masale bhaat <span class="diet">Veg</span></h4><p>Fragrant rice with vegetables, goda masala, coconut, and crunchy papad.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Matki usal <span class="diet">Veg</span></h4><p>Sprouted moth beans in a warming curry, served with chapati and koshimbir.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="non-veg"><article class="dish" data-diet="non-veg"><h4>Malvani fish thali <span class="diet">Non-veg</span></h4><p>Market fish in coastal coconut gravy with rice, sol kadhi, and bhakri.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="non-veg"><article class="dish" data-diet="non-veg"><h4>Chicken sukka <span class="diet">Non-veg</span></h4><p>Dry-roasted chicken with fresh coconut, curry leaves, and a toasted spice blend.</p></article></div>
+        </div></section>
+
+        <section class="menu-section"><h3>Desserts <span class="eyebrow">A sweet finish</span></h3><div class="row">
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Puran poli <span class="diet">Veg</span></h4><p>Golden sweet lentil flatbread with ghee, cardamom, and warm milk.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Amrakhand <span class="diet">Veg</span></h4><p>Silky hung curd and Alphonso mango dessert, served chilled when in season.</p></article></div>
+            <div class="col-md-6 col-lg-4 mb-3 dish-wrap" data-diet="veg"><article class="dish" data-diet="veg"><h4>Ukadiche modak <span class="diet">Veg</span></h4><p>Steamed rice-flour dumplings filled with jaggery, coconut, and sesame.</p></article></div>
+        </div></section>
+        <p class="menu-note mb-0"><strong>Dining at Palm Paradise:</strong> Home-cooked meals are prepared to order. Advance notice helps us plan special meals, children’s portions, and non-vegetarian dishes.</p>
+    </main>
+    <script>
+        document.querySelectorAll('.menu-filter').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var filter = button.dataset.filter;
+                document.querySelectorAll('.menu-filter').forEach(function (item) {
+                    var selected = item === button;
+                    item.classList.toggle('active', selected);
+                    item.setAttribute('aria-pressed', selected);
+                });
+                document.querySelectorAll('.dish-wrap').forEach(function (dish) {
+                    dish.classList.toggle('d-none', filter !== 'all' && dish.dataset.diet !== filter);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
